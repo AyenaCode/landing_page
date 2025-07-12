@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MVP IA – Landing Page AyCode
 
-## Getting Started
+Ce projet est une landing page moderne pour présenter l’offre **MVP IA** d’AyCode : création rapide de MVP IA et web pour startups et PME ambitieuses.
 
-First, run the development server:
+## Fonctionnalités principales
+
+- Présentation de l’offre MVP IA (création, maintenance, évolutions)
+- Témoignages clients
+- Section À propos, contact, CGU/CGV, politique de confidentialité
+- Design responsive, animations Framer Motion, composants shadcn/ui
+- Stack : Next.js 15, React 19, Tailwind CSS, shadcn/ui, Framer Motion
+
+## Démarrage rapide
+
+Installez les dépendances puis lancez le serveur de développement :
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
+# ou npm/yarn/bun selon votre gestionnaire
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) pour voir le résultat.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure du projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/` : pages principales (accueil, à propos, contact, cgu, privacy)
+- `src/components/landing/` : sections de la landing page (hero, features, testimonials, pricing, footer)
+- `src/components/ui/` : composants UI réutilisables (shadcn/ui)
+- `src/hooks/` : hooks personnalisés
+- `src/lib/` : utilitaires
 
-## Learn More
+## Personnalisation
 
-To learn more about Next.js, take a look at the following resources:
+Modifiez les textes, couleurs, offres et témoignages dans les fichiers de `src/components/landing/` pour adapter la landing à votre activité.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Déployez facilement sur [Vercel](https://vercel.com/) ou toute plateforme compatible Next.js.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© {new Date().getFullYear()} AyCode – MVP IA. Tous droits réservés.
